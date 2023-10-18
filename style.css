@@ -22,7 +22,7 @@
   }
 
   header {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('./assets/car-bg-header.png');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('https://source.unsplash.com/1400x1200/?sports-car,race');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,14 +30,18 @@
   }
 
   header .btn-custom {
-    background-color: var(--cinza01);
-    color: azure;
+    background-color: var(--cor-destaque);
+    color: var(--darkk);
     border: var(--cinza03);
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave */
+    font-weight: bold;
+    font-family: var(--fonte01);
   }
 
-  .btn-custom:hover {
-    background-color: var(--cinza02);
-    color: whitesmoke;
+  header .btn-custom:hover {
+    background-color: var(--cinza04);
+    color: var(--cinza01);
+   
   }
 
   aside {
@@ -59,10 +63,15 @@ h2, h3, p {
     padding: 0.6rem;
 }
 
+section {
+    margin-block: 1.3rem ;
+}
+
 .titulo-destaque {
     font-family: var(--fonte04);
     color: var(--cor-destaque);
     border-bottom: 1px solid var(--cinza04);
+    font-weight: bold;
 }
 
 
@@ -77,4 +86,9 @@ h2, h3, p {
     border: 2px solid var(--cinza03);
     border-radius: 1.2rem;
 
+}
+
+
+.card-text {
+    font-size: 0.9rem;
 }

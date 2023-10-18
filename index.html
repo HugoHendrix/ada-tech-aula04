@@ -35,11 +35,11 @@
     <header class="container-fluid">
         <div class="row align-items-center">
             <div class="col-md-4">
-                <img src="./assets/motor-hub-logo.png" alt="logo da MotorHub" class="img-fluid">
+                <a href="/index.html" title="Voltar a página inicial"><img src="./assets/motor-hub-logo.png" alt="logo da MotorHub" class="img-fluid"></a>
             </div>
             <div class="col-md-8 text-md-right">
-                <a href="#" class="btn btn-primary mr-2  btn-custom">Sobre</a>
-                <a href="#" class="btn btn-primary btn-custom">Produtos</a>
+                <a href="/sobre.html" class="btn btn-primary mr-2  btn-custom">Sobre</a>
+                <a href="/produtos.html" class="btn btn-primary btn-custom">Carros Disponíveis</a>
             </div>
         </div>
     </header>         
@@ -123,36 +123,79 @@
                 </div>
             </div>
         </section>
+
+        <section class="container-fluid custom-container">
+            <div class="container mt-5">
+                <h2 class="text-center" id="contato">Formulário de Contato</h2>
+                <form onsubmit="return validarForm()">
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required pattern="[A-Za-z\s]+" title="Digite seu nome, insira apenas letras">
+                            <div class="invalid-feedback">Por favor, insira um nome válido (sem números).</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+                            <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Entre em contato com o nosso time de vendas</legend>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem" required maxlength="500"></textarea>
+                            <div class="invalid-feedback">Por favor, insira sua mensagem (limite de 500 caracteres).</div>
+                        </div>
+                    </fieldset>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            
+        </section>
         
     </main>
 
-    <footer class="bg-dark text-light p-5">
+    <footer class="footer bg-dark text-white py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Sobre o MotorHub</h3>
-                    <p>MotorHub é o destino definitivo para entusiastas de carros esportivos de luxo. Oferecemos uma seleção exclusiva dos carros mais incríveis do mundo, proporcionando a você uma experiência de direção inigualável.</p>
+                    <h5>Contato</h5>
+                    <p>Estamos aqui para atender todas as suas necessidades relacionadas a carros de luxo. Entre em contato conosco para obter mais informações.</p>
+                    <p><i class="fas fa-envelope"></i> E-mail: info@motorhub.com</p>
+                    <p><i class="fas fa-phone"></i> Telefone: (123) 456-7890</p>
                 </div>
                 <div class="col-md-4">
-                    <h3>Contato</h3>
-                    <address>
-                        <p>Endereço: 123 Rua dos Carros Incríveis</p>
-                        <p>Telefone: (123) 456-7890</p>
-                        <p>Email: info@motorhub.com</p>
-                    </address>
-                </div>
-                <div class="col-md-4">
-                    <h3>Redes Sociais</h3>
+                    <h5>Links Rápidos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Facebook</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Instagram</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="produtos.html">Carros Disponíveis</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Siga-nos</h5>
+                    <p>Fique por dentro das últimas novidades e ofertas exclusivas. Siga-nos nas redes sociais.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center mt-3">
+                    <p>&copy; 2023 MotorHub - Todos os direitos reservados</p>
                 </div>
             </div>
         </div>
     </footer>
     
-
+    
+<script src="/index.js"></script>
 </body>
 </html>
