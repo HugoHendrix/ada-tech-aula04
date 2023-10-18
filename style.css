@@ -1,0 +1,80 @@
+/* Definição de variáveis */
+:root {
+    --fonte01: 'Raleway', sans-serif;
+    --fonte02: 'Roboto', sans-serif;
+    --fonte03: 'Montserrat', sans-serif;
+    --fonte04: 'Tilt Neon', sans-serif;
+    --cinza01: #404258;
+    --cinza02: #474E68; 
+    --cinza03: #50577A; 
+    --cinza04: #e7e9f1;
+    --darkk: #0F0F0F;
+    ;
+    --cor-destaque: #EE9322;
+
+  }
+    
+  body {
+    font-family: var(--fonte01);
+    background:var(--darkk);
+    color: aliceblue;
+    font-size: 1.2rem;
+  }
+
+  header {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('./assets/car-bg-header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+  }
+
+  header .btn-custom {
+    background-color: var(--cinza01);
+    color: azure;
+    border: var(--cinza03);
+  }
+
+  .btn-custom:hover {
+    background-color: var(--cinza02);
+    color: whitesmoke;
+  }
+
+  aside {
+    background-color: var(--cinza01);
+    border: 2px solid var(--cinza04);
+    border-end-start-radius: 1.2rem;
+    
+  }
+
+  .title-aside {
+    margin-top: 0.8rem;
+  }
+  
+  aside p {
+    padding: 0.8rem;
+  }
+
+h2, h3, p {
+    padding: 0.6rem;
+}
+
+.titulo-destaque {
+    font-family: var(--fonte04);
+    color: var(--cor-destaque);
+    border-bottom: 1px solid var(--cinza04);
+}
+
+
+.saudacao{
+    padding: 2rem;
+}
+
+.custom-container {
+    background-color: var(--cinza04);
+    color: var(--darkk);
+    padding: 1.5rem;
+    border: 2px solid var(--cinza03);
+    border-radius: 1.2rem;
+
+}

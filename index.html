@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Meta Tags Importantes -->
+    <meta name="description" content="Bem-vindo ao nosso showroom de carros automotivos. Este site é um exercício da Ada Tech em parceria com a iFood, criado para estudar desenvolvimento front-end. Explore nossa incrível seleção de carros e saiba mais sobre nossos projetos automotivos." />
+    <meta name="keywords" content="estudo front end, Ada Tech, iFood, carros automotivos, showroom, desenvolvimento web" />
+    <meta name="author" content="Hugo Hendrix" />
+    
+    
+    <!-- Links para o Bootstrap (CDN) -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Links para as fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;700&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/car-ico.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>MotorHub - Sua Loja Automotiva</title>
+</head>
+<body class="container-fluid">
+
+
+    <header class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="./assets/motor-hub-logo.png" alt="logo da MotorHub" class="img-fluid">
+            </div>
+            <div class="col-md-8 text-md-right">
+                <a href="#" class="btn btn-primary mr-2  btn-custom">Sobre</a>
+                <a href="#" class="btn btn-primary btn-custom">Produtos</a>
+            </div>
+        </div>
+    </header>         
+    
+
+    <main class="container-fluid">
+        <div class="row">
+            <aside class="col-md-3 container-fluid">
+                <!-- Conteúdo do aside -->
+                    <img src="./assets/Car For Sale.gif" class="img-fluid" alt="carro viper em promoção">    
+                    <img src="./assets/Farol Carro.gif" class="img-fluid" alt="carro viper em promoção">                
+            </aside>
+            
+            
+            <section class="col-md-9 saudacao">
+
+                    <!-- Conteúdo da Seção 1 -->
+                <h2>Bem-vindo ao <span class="titulo-destaque">MotorHub</span></h2>
+                <h3>O Seu Destino Automotivo de Excelência!</h3>
+                <p>
+                    É com grande entusiasmo que damos as boas-vindas a você no <span class="titulo-destaque">MotorHub</span>, o seu portal para o mundo dos carros esportivos de alto nível. Aqui, a paixão pela velocidade, o design requintado e a engenharia de precisão se unem para criar uma experiência automotiva única e inesquecível.
+                </p>            
+                
+                <p>Nossa missão é mais do que apenas fornecer veículos excepcionais; é proporcionar uma jornada que desperte a sua paixão pelos automóveis e o coloque no comando de emoções indescritíveis. No <span class="titulo-destaque">MotorHub</span>, você encontrará uma coleção cuidadosamente selecionada de carros esportivos que são verdadeiras obras de arte sobre rodas. Cada veículo é um testemunho da inovação, da potência e do design arrojado.
+
+                </p>
+
+                <p>Além disso, nossa equipe altamente qualificada está à sua disposição para fornecer orientação, conhecimento e assistência personalizada em sua busca pelo carro dos seus sonhos. Seja você um entusiasta experiente ou esteja apenas começando a explorar o mundo dos carros esportivos, estamos aqui para atender às suas necessidades e responder a todas as suas perguntas.
+
+                </p>
+
+                <p>
+                    Seja bem-vindo ao <span class="titulo-destaque">MotorHub</span>, onde a estrada da alta performance se encontra com o luxo, a inovação e a emoção. Sinta-se à vontade para explorar nosso showroom e mergulhar no universo extraordinário dos carros esportivos de alto nível. O prazer de dirigir começa aqui!
+
+
+                </p>
+            </section>
+        </div>
+
+        <div class="container-fluid text-center m-1">
+            <div id="meuCarrossel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#meuCarrossel" data-slide-to="0" class="active"></li>
+                    <li data-target="#meuCarrossel" data-slide-to="1"></li>
+                    <li data-target="#meuCarrossel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/carrossel1.png" alt="Imagem 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/carrossel2.png" alt="Imagem 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/carrossel3.png" alt="Imagem 3" class="d-block w-100">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#meuCarrossel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#meuCarrossel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+        
+
+        <section class="container-fluid m-1">
+            <div class="container-fluid custom-container">
+                <h1 class="m-3 titulo-destaque">Review do Maserati MC20 (2023): Uma Explosão de Potência e Elegância</h1>
+                <div class="row">
+                    <div class="col-md-6 embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/bJZCM0lke_0" title="2023 Maserati MC20 - Wild Super Sports Car!" frameborder="0" width="500" height="460" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <p>O Maserati MC20 (2023) é um verdadeiro testemunho da excelência automotiva italiana. Com um motor V6 de 3.0 litros sob o capô, que desencadeia 630 cavalos de potência e um torque de 730 Nm, este carro esportivo é uma máquina que inspira admiração. De zero a 100 km/h em 2.88 segundos - é o que chamamos de aceleração pura.</p>
+                        <p>Quando você pisa no acelerador, o MC20 responde com uma energia que vai direto para o coração. A sensação de velocidade e poder é incomparável, e isso se torna ainda mais evidente quando o ponteiro do velocímetro atinge 200 km/h em apenas 8.8 segundos. Com uma velocidade máxima de 326 km/h, você está destinado a conquistar o asfalto com autoridade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-dark text-light p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Sobre o MotorHub</h3>
+                    <p>MotorHub é o destino definitivo para entusiastas de carros esportivos de luxo. Oferecemos uma seleção exclusiva dos carros mais incríveis do mundo, proporcionando a você uma experiência de direção inigualável.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contato</h3>
+                    <address>
+                        <p>Endereço: 123 Rua dos Carros Incríveis</p>
+                        <p>Telefone: (123) 456-7890</p>
+                        <p>Email: info@motorhub.com</p>
+                    </address>
+                </div>
+                <div class="col-md-4">
+                    <h3>Redes Sociais</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Facebook</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Instagram</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
