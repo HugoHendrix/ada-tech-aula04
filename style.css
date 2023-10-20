@@ -22,11 +22,12 @@
   }
 
   header {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('https://source.unsplash.com/1400x1200/?sports-car,race');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('https://source.unsplash.com/1200x1000/?sports-car');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 2rem;
+    height: 80vh;
   }
 
   header .btn-custom {
@@ -90,5 +91,28 @@ section {
 
 
 .card-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
+}
+
+
+.whatsapp-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+.whatsapp-link:hover{
+  opacity: 0.8;
+}
+
+.fa-whatsapp {
+  margin-top: 16px;
 }
